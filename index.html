@@ -23,6 +23,16 @@
     <meta content="https://kookii.top" property="og:url" />
     <meta content="https://kookii.top/logo.png" property="og:image" />
     <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
+
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        window.onload = async () => {
+            await delay(2000);
+
+            document.getElementById('popup').style.display = 'table-cell';
+        }
+    </script>
 </head>
 
 <body>
@@ -43,6 +53,11 @@
 
     <br>
     <hr><br>
+
+        <div id="popup">
+            <h1 style="margin-top: 20%;"><a href="https://discord.gg/ahWhqYRx3H" target="_blank">JOIN THE DISCORD SERVER!!!!</a></h1>
+            <button onclick="document.getElementById('popup').style.display = 'none'">Close Me! :3</button>
+        </div>
 
     <div class="container">
         <div class="mode-container">
