@@ -30,7 +30,7 @@
         window.onload = async () => {
             await delay(2001);
 
-            document.getElementById('popup').style.display = 'table-cell';
+            document.getElementById('popup').style.display = 'block';
         }
     </script>
 </head>
@@ -54,10 +54,11 @@
     <br>
     <hr><br>
 
-        <div id="popup">
-            <h1 style="margin-top: 20%;"><a href="https://discord.gg/ahWhqYRx3H" target="_blank">JOIN THE DISCORD SERVER!!!!</a></h1>
-            <button onclick="document.getElementById('popup').style.display = 'none'">Close Me! :3</button>
-        </div>
+    <div id="popup">
+        <h1 style="margin-top: 20%;"><a href="https://discord.gg/ahWhqYRx3H" target="_blank">JOIN THE DISCORD
+                SERVER!!!!</a></h1>
+        <button onclick="document.getElementById('popup').style.display = 'none'">Close Me! :3</button>
+    </div>
 
     <div class="container">
         <div class="mode-container">
