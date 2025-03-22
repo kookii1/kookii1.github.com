@@ -8,7 +8,7 @@ function drainPower() {
         powerLeft -= 0.11;
         document.getElementById('powerbar-text').innerText = powerLeft.toFixed(2) + '%';
     }
-    if (powerLeft <= 0) {
+    if (powerLeft <= 0.06) {
         clearInterval(intervalID);
         document.getElementById('powerout').style.display = 'block';
     }
