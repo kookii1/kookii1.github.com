@@ -1,3 +1,8 @@
+@font-face {
+    font-family: VCR_OSD_MONO;
+    src: url('./font.ttf');
+}
+
 body {
     font-family: "Afacad Flux", sans-serif !important;
     font-optical-sizing: auto;
@@ -9,6 +14,7 @@ body {
     height: 200px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #title {
@@ -63,4 +69,31 @@ img {
 .mode-info {
     flex: 1;
     max-width: 600px;
+}
+
+#powerbar {
+    z-index: 5;
+    font-family: VCR_OSD_MONO;
+    overflow: hidden;
+}
+
+#powerbar-text {
+    position: fixed;
+    z-index: 5;
+    font-size: 45px;
+    text-align: right;
+    top: 1%;
+    left: 89%;
+    color: black;
+    font-weight: 900;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+}
+
+#powerout {
+    position: fixed;
+    z-index: 2;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
 }

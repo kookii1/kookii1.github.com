@@ -24,18 +24,25 @@
     <meta content="https://kookii.top/logo.png" property="og:image" />
     <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
 
+    <script src="./script.js"></script>
+
     <script>
         const delay = ms => new Promise(res => setTimeout(res, ms));
 
         window.onload = async () => {
             await delay(2001);
 
-            document.getElementById('popup').style.display = 'block';
+            //document.getElementById('popup').style.display = 'block';
         }
     </script>
 </head>
 
 <body>
+    <audio id="audio" src="./song.mp3" autoplay loop></audio>
+    <div id="powerout"></div>
+    <div id="powerbar">
+        <h1 id="powerbar-text">499.78%</h1>
+    </div>
     <img id="banner" src="banner.png" alt="banner">
 
     <h1 id="title">Kookii's Mode List</h1>
